@@ -107,7 +107,7 @@ VPC resources could also be created with CloudShell, which is the Command Line I
 
 Here is the command used to setup a VPC:
 ```
-'aws ec2 create-vpc --cidr-block 10.0.0.0/24 --query Vpc.VpcId --output text'
+aws ec2 create-vpc --cidr-block 10.0.0.0/24 --query Vpc.VpcId --output text
 ```
 Interestingly, VPCs were originally designed for setting up private networks for EC2 instances! VPCs are now essential for a wider range of services, but they were initially tied to EC2, so their CLI commands still start with 'aws ec2'.
 
@@ -115,7 +115,7 @@ Interestingly, VPCs were originally designed for setting up private networks for
 
 To set up a subnet for my VPC, I used the command:
 ```
-'aws ec2 create-subnet --vpc-id "VPC-ID" --cidr-block 10.0.0.0/25'
+aws ec2 create-subnet --vpc-id "VPC-ID" --cidr-block 10.0.0.0/25
 ```
 ### Adding an Internet Gateway
 
