@@ -7,7 +7,7 @@
 
 ## Creating a Private Subnet
 
-![Image](http://learn.nextwork.org/relieved_lavender_noble_bear/uploads/aws-networks-private_afe1fdbd)
+![Image](https://learn.nextwork.org/projects/static/aws-networks-private/architecture-clean.png)
 
 ---
 
