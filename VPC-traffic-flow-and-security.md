@@ -52,6 +52,7 @@ The route in my route table that directed internet-bound traffic to my internet 
 
 ## Security groups
 
+As the Figure shows, a security group is a virtual firewall that controls what network traffic is allowed to reach or leave a resource by applying a set of rules based on things like IP address, protocol, and port.
 ![Image](https://learn.nextwork.org/projects/static/aws-networks-security/high-step3.0.png)
 
 ### Inbound vs Outbound rules
@@ -83,11 +84,5 @@ By default, a network ACL's inbound and outbound rules will allow all traffic. T
 In contrast, a custom ACL’s inbound and outbound rules are automatically set to deny all by default.
 
 ![Image](http://learn.nextwork.org/relieved_lavender_noble_bear/uploads/aws-networks-security_4faeb056)
-
----
-
-## Tracking VPC Resources
-
----
 
 ---
