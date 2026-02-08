@@ -35,6 +35,12 @@ I will be using the previous environment that has been built upon in 04 - Creati
 This project took me approximately 45 minutes to complete.
 
 ---
+## Setting Up Direct Service Access
+In this step, I will be creating a new EC2 instance and finding a way to access this instance. Finally, I will be putting the EC2 instance into the VPC. Specifically the Public Subnet under the previously created security group. For both instances I will be using a AMI (Amazon Machine Image) and have selected the Amazon Linux 2023 AMI. The next step will focus on setting up direct access to the EC2 instance via SSH and Key Pairs. This is primarily going to be used in order to access the private instance within the private subnet.
+
+![Image](https://learn.nextwork.org/projects/static/aws-networks-ec2/high-step3.3.png) 
+
+
 
 ## Setting Up Direct Service Access
 
