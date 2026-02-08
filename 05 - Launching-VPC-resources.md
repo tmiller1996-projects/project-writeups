@@ -17,7 +17,18 @@
 
 ### How I used Amazon VPC in this project
 
-I used Amazon VPC to create EC2 instances in my public and private subnets. Additionally, I used the VPC Wizard in order to quickly create a VPC with a set of subnets, route tables, and internet gateways.
+I used Amazon VPC to create EC2 instances in my public and private subnets. Additionally, I used the VPC Wizard in order to quickly create a VPC with a set of subnets, route tables, and internet gateways. 
+
+I will be using the previous environment that has been built upon in 04 - Creating-a-private-subnet. This includes:
+
+```
+- A VPC
+- 2 Subnets (One public and one private)
+- An IGW
+- Route tables
+- Security groups
+- Netowork ACLs
+```
 
 ### This project took me...
 
@@ -25,7 +36,7 @@ This project took me approximately 45 minutes to complete.
 
 ---
 
-## Setting Up Direct VM Access
+## Setting Up Direct Service Access
 
 Directly accessing a EC2 instance means logging into and managing the operating system or software of the machine as if you were using it in front of you, but over the internet.
 
@@ -47,7 +58,7 @@ My private key's file format is a .pem, which stands for Privacy Enhanced Mail. 
 
 ## Launching a public server
 
-I had to change my EC2 instance's networking settings by specifying the VPC I want it to sit under, specifying the subnet within that VPC, and then specifying the security group within that subnet. I could also select at this point if I want it to auto-assign a public IP address.
+I had to change my EC2 instances networking settings by specifying the VPC I want it to sit under, specifying the subnet within that VPC, and then specifying the security group within that subnet. I could also select at this point if I want it to auto-assign a public IP address.
 
 ![Image](http://learn.nextwork.org/relieved_lavender_noble_bear/uploads/aws-networks-ec2_88727bef)
 
@@ -65,7 +76,7 @@ My private server's security group's source is the public subnet security group 
 
 ## Speeding up VPC creation
 
-I used an alternative way to set up an Amazon VPC! This time, when going into the "Create VPC" menu, i chose the "VPC and more" option. This provided me with a way to auto-generate names, select CIDR blocks, customize AZs, choose the number of public/private subnets, implement NAT gateways, and setup VPC endpoints.
+I also used an alternative way to set up an Amazon VPC. This time, when going into the "Create VPC" menu, i chose the "VPC and more" option. This provided me with a way to auto-generate names, select CIDR blocks, customize AZs, choose the number of public/private subnets, implement NAT gateways, and setup VPC endpoints.
 
 A VPC resource map is visualisation of what is included within a VPC. Logically, it will consist of the VPC itself, the Subnets, Route tables, and Network Connections. The resource map does not provide any details of security groups or ACLs.
 
